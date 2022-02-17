@@ -7,10 +7,67 @@
 html{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 62.5%;
+    width: 100%;
+    height: 100%;
 }
 
 body{
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 100%;
+    padding: 5rem 1rem;
 }
+
+#container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(5, auto);
+    gap: 1.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.question{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #333;
+    cursor: pointer;
+    padding: 1rem;
+    font-size: 1.6rem;
+    
+}
+
+.question img{
+    margin-right: 1rem;
+}
+
+.question p{
+    color: #ffffff;
+}
+
+.answer{
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    font-size: 1.4rem;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 0 0 1rem 1rem;
+    
+}
+
+.answer p{
+    color: #000000;
+}
+
+.answer p::before{
+    content: "R/: ";
+    font-weight: bold;
+}
+
+
+

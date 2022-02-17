@@ -79,5 +79,15 @@ h2{
     font-weight: bold;
 }
 
+@media(min-width: 768px){
+    #container{
+        width: 80%;
+    }
+}
 
+@media(min-width: 1300px){
+    #container{
+        width: 70%;
+    }
+}
 
